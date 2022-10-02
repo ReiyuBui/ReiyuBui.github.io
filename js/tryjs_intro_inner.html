@@ -2,9 +2,16 @@
 <html>
     <head>
         <script type="text/javascript">
+           function onClick () {
+            document.getElementById("demo").innerHTML="Hello Javascript!";
+           }
+
+           function onload(){
             myButton = document.getElementById("myButton")
-        .myButton.onclick = function () {
-        }
+            myButton.onClick = onClick;
+           }
+
+           window.addEventListener("Load",onload)
         </script>
     </head>
 <body>
